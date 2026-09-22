@@ -1,0 +1,138 @@
+"""
+a=float(input("enter first number:"))
+b=float(input("enter sencond number:"))
+operators=input("enter operators")
+
+if operators=="+":
+    print("results:", a+b)
+elif operators=="-":
+    print("results:",a-b)
+elif operators=="/":
+    print("results:",a/b)
+elif operators=="*":
+    print("results:",a*b)
+elif operators=="/":
+    if b !=0:
+        print("Cannot divided bt zero:")
+else:
+    print("Invalid operators")
+
+
+username = input("enter usrename")
+password = input("enter password")
+
+if username == "admin":
+    if password == "1234":
+        print("login succesfull")
+    else:
+        print("wrong password")
+else:
+    print("wrong username")
+
+
+marks = int(input("enter marks:"))
+attendance = float(input("enter attendance percentage"))
+
+if marks >= 40:
+    if attendance >=75:
+        print("elgibible")
+    else:
+        print("not elgible")
+else:
+    print("fail")
+
+
+balance = float(input("enter balance:"))
+amount = float(input("enter withdraw amount"))
+
+if amount >0:
+    if amount <= balance:
+        balance = balance-amount
+        print("withdraw succesfull")
+        print("remaining balance:", balance)
+    else:
+        print("insufficient balance")
+else:
+    print("invalid amount")
+
+age =int(input("enter age"))
+test = input("did you pass the driving test ? (yes/no):")
+if age >=18:
+    if test == "yes":
+        print("license can be issued")
+    else:
+        print("pass the driving test first")
+else:
+    print("not elgibile due to age")
+
+"""
+#print numbers from 1 to 10
+for i in range(1, 11):
+    print(i)
+
+
+#print numbers from 10 to 1
+for i in range (10,0,-1):
+    print(i)
+
+#print even numbers from 2 to 50
+for i in range(2,51,2):
+    print(i)
+
+#print odd numbers from 1 to 50
+for i in range(1,51,2):
+    print(i)
+
+#print ("multiples of 5 from 5 to 50:")
+for i in range (5,51,5):
+    print(i)
+
+#tables of a number 
+#multiplication table
+number = int(input("enter number:"))
+for i in range(1, 11):
+    print(number,"X",i,"=",number*i)
+
+#sum of numbers from 1 to n
+n =int(input("enter n:"))
+
+total =0
+for i in range (1,n,+1):
+    total = total + i
+    print("sum:",total)
+    #factorial of a number 
+n = int(input("enternumber:"))
+factorial =1
+for i in range(1,n+1):
+    factorial = factorial * 1
+print ("factorial:",factorial)
+
+#sum of even number from 2 to n 
+n = int(input("enter n:"))
+total =0
+for i in range (2,n+1,2):
+    total = total+i
+    print("sum:",total)
+
+# count of multiples of 3
+n = int(input("enter n:"))
+count=0
+for i in range(1,n+1):
+    if i % 3 ==0:
+        count = count+1
+    print("count:",count)
+
+#print all even number from 2 to 50
+i=2
+while i<=50:
+    print(i)
+    i=i+2 
+
+#print total of numbers entered by user until 0 is enetred
+total=0
+
+number = int(input("enter number:"))
+while number !=0:
+ total = total+number
+ number =int(input("enter number:"))
+ print("total:",total)
